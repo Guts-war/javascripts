@@ -18,12 +18,15 @@
     <p>Aprendendo a usar o <strong>DOM</strong> com JS</p>
     <p>innerText abaixo</p>
     <div id="buttom">Clique em Mim</div>
-
+    
     <script>
         var p1 = document.getElementsByTagName('p')[1]
-        document.write(p1.innerHTML)
-        var div = document.getElementById('buttom')
-        div.style.color = 'green'
+        /*  document.write(p1.innerHTML)
+            var div = document.getElementById('buttom')
+            div.style.color = 'green' */
+        var d = document.querySelector('div#buttom')
+        d.style.color = 'purple'
+        d.style.background = 'black'
     </script>
 
 </body>
