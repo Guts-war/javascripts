@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições Parte 1</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <p>Velocidade do Carro:</p>
+    <input type="number" name="txtvel" id="txtvel" placeholder="Em Km/h">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">  
+
+    </div>
+    <script>
+        function calcular() {
+            let txtv = document.querySelector('input#txtvel')
+            let res =  document.querySelector('div#res')
+            let vel = Number(txtv.value)
+            res.innerHTML = `<p>Sua velocicade atual é de ${vel} Km/h</p>`
+            res.innerHTML += `<p>Dirija sempre com cinto de segurança</p>`
+
+        }
+    </script>
+
+</body>
+</html>
