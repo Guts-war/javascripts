@@ -1,5 +1,5 @@
 let agora = new Date()
-let horas = agora.get()
+let horas = agora.getHours()
 console.log(`Agora são ${horas} horas.`)
 if (horas >= 0 && horas < 6) {
     console.log('Já é madrugada, vai dormir!')

@@ -42,4 +42,4 @@ switch (dia5em) {
         console.log('[ERRO] Dia Inválido')
 }
 
-console.log(`${hora}:${min}`)
+console.log(`${hora}:${min}`) 
